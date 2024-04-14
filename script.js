@@ -1,15 +1,15 @@
-const btn2 = document.querySelector("#btn2")
+const btn1 = document.querySelector("#btn1")
 
 btn2.addEventListener("click", function () {
 });
 
 
-    const btn1 = document.querySelector('#btn1');
+    const btn2 = document.querySelector('#btn2');
 
     btn1.addEventListener("mousemove", function () {
-        const randomX = parseInt(Math.random()*500);
-        const randomY = parseInt(Math.random()*500);
+        const randomX = parseInt(Math.random()*700);
+        const randomY = parseInt(Math.random()*700);
         btn1.style.setProperty('top',randomY+'%');
         btn1.style.setProperty('left',randomX+'%');
-        btn1.style.setProperty('transform', `translate(-${randomX}%,-${randomY}%)`);
+        btn1.style.setProperty('transform', `translate(${randomX}%,${randomY}%)`);
     })
