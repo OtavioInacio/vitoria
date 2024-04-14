@@ -1,10 +1,10 @@
-const btn1 = document.querySelector("#btn1")
+const btn2 = document.querySelector("#btn2")
 
 btn2.addEventListener("click", function () {
 });
 
 
-    const btn2 = document.querySelector('#btn2');
+    const btn1 = document.querySelector('#btn1');
 
     btn1.addEventListener("mousemove", function () {
         const randomX = parseInt(Math.random()*700);
