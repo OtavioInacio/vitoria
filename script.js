@@ -1,15 +1,9 @@
-const btn2 = document.querySelector("#btn2")
+let button = document.getElementById('btn1');
+let height = window.innerHeight - 50;
+let width = window.innerWidth - 50;
 
-btn2.addEventListener("click", function () {
-});
-
-
-    const btn1 = document.querySelector('#btn1');
-
-    btn1.addEventListener("mousemove", function () {
-        const randomX = parseInt(Math.random()*700);
-        const randomY = parseInt(Math.random()*700);
-        btn1.style.setProperty('top',randomY+'%');
-        btn1.style.setProperty('left',randomX+'%');
-        btn1.style.setProperty('transform', `translate(${randomX}%,${randomY}%)`);
-    })
+button.addEventListener('mouseover', function() {
+    button.style.position = "absolute";
+    button.style.top = Math.random() * height + "px";
+    button.style.left = Math.random() * width + "px";
+})
